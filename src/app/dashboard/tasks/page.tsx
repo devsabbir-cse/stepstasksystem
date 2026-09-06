@@ -35,13 +35,14 @@ import MobileTaskDashboard from "./MobileTaskList";
 import TabletTaskDashboard from "./TabletTaskDashboard";
 
 import useScreenType from "./hooks/useScreenType";
+import { log } from "console";
 
 // ======================================================
 // API
 // ======================================================
 
 const API_URL =
-  "http://test4180.atwebpages.com/getTasks.php";
+  "http://localhost/Team-Task/getTasks.php";
 
 // ======================================================
 // DEFAULT PAGINATION
@@ -495,6 +496,7 @@ const DashboardContent = () => {
 
         const result: TaskApiResponse =
           await response.json();
+          console.log("Fetched tasks:", result);
 
         if (!result.success) {
           throw new Error(
@@ -542,7 +544,7 @@ const DashboardContent = () => {
         try {
           const response =
             await fetch(
-              "http://test4180.atwebpages.com/teamMembers.php"
+              "http://localhost/Team-Task/teamMembers.php"
             );
 
           if (!response.ok) {
