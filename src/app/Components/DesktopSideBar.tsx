@@ -34,6 +34,11 @@ const DesktopSideBar = () => {
       href: "/dashboard",
     },
     {
+      name: "Tasks",
+      icon: Users,
+      href: "/dashboard/tasks",
+    },
+    {
       name: "Team",
       icon: Users,
       href: "/dashboard/team",
