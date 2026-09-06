@@ -62,7 +62,6 @@ const defaultPagination: Pagination = {
 
 const DashboardContent = () => {
   const router = useRouter();
-  localStorage.setItem("wAdjust", "true");
   const pathname = usePathname();
 
   const searchParams =
