@@ -57,3 +57,31 @@ export interface TaskApiResponse {
   pagination: Pagination;
   filters: TaskFilters;
 }
+
+export interface Task {
+  TID: number;
+
+  TMID: number;
+
+  TASK_TITLE: string;
+
+  TASK_DESC: string;
+
+  STATUS: number;
+
+  STATUS_NAME: string;
+
+  TIMELINE: string;
+
+  PRIORITY: number;
+
+  PRIORITY_NAME: string;
+
+  CREATED_AT: string;
+
+  MEMBER_NAME: string;
+
+  MEMBER_EMAIL: string;
+
+  MEMBER_POSITION: string;
+}
