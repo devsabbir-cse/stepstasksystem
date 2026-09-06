@@ -41,7 +41,7 @@ import useScreenType from "./hooks/useScreenType";
 // ======================================================
 
 const API_URL =
-  "http://localhost/Team-Task/getTasks.php";
+  "http://test4180.atwebpages.com/getTasks.php";
 
 // ======================================================
 // DEFAULT PAGINATION
@@ -542,7 +542,7 @@ const DashboardContent = () => {
         try {
           const response =
             await fetch(
-              "http://localhost/Team-Task/teamMembers.php"
+              "http://test4180.atwebpages.com/teamMembers.php"
             );
 
           if (!response.ok) {
