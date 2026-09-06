@@ -587,6 +587,9 @@ const DashboardContent = () => {
   const [
     wAdjust, setWAdjust,] = useState(true);
     
+       useEffect(() => {
+      localStorage.setItem("wAdjust", "true");  
+    }, []);
 
 
   useEffect(() => {
