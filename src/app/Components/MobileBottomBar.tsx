@@ -28,7 +28,7 @@ const MobileBottomBar = () => {
           ===================================================== */}
 
       <Link
-        href="/dashboard/AddTask"
+        href="/dashboard/tasks/add-task"
         className="
           lg:hidden
           fixed
