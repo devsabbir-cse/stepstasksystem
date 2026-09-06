@@ -101,7 +101,7 @@ useEffect(() => {
     transition-[margin]
     duration-500
     ease-in-out
-    ${wAdjust ? "ml-10" : "ml-55"}
+    ${wAdjust ? "lg:ml-10" : "lg:ml-55"}
   `}
 >
 

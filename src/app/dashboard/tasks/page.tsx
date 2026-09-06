@@ -577,6 +577,7 @@ const DashboardContent = () => {
   const handleRefresh = () => {
     window.location.reload();
   };
+  const [filterOpen, setFilterOpen] = useState(false);
 
 
   // ======================================================
@@ -824,9 +825,12 @@ const DashboardContent = () => {
             members={members}
             loading={loading}
             error={error}
+            onFilterClick={() => setFilterOpen(true)}
           />
 
         )}
+
+        
 
 
         {/* ================================================
