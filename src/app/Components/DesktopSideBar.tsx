@@ -49,6 +49,9 @@ const DesktopSideBar = () => {
       href: "/dashboard/tasks/add-task",
     },
   ];
+    useEffect(() => {
+  localStorage.setItem("wAdjust", "true");  
+}, []);
 
 
 useEffect(() => {

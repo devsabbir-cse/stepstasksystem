@@ -35,7 +35,6 @@ import MobileTaskDashboard from "./MobileTaskList";
 import TabletTaskDashboard from "./TabletTaskDashboard";
 
 import useScreenType from "./hooks/useScreenType";
-import { log } from "console";
 
 // ======================================================
 // API
@@ -63,7 +62,7 @@ const defaultPagination: Pagination = {
 
 const DashboardContent = () => {
   const router = useRouter();
-
+  localStorage.setItem("wAdjust", "true");
   const pathname = usePathname();
 
   const searchParams =
@@ -580,14 +579,15 @@ const DashboardContent = () => {
     window.location.reload();
   };
 
+
   // ======================================================
   // SIDEBAR WIDTH
   // ======================================================
 
   const [
-    wAdjust,
-    setWAdjust,
-  ] = useState(false);
+    wAdjust, setWAdjust,] = useState(true);
+    
+
 
   useEffect(() => {
     const updateWAdjust = () => {
