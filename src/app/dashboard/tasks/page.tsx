@@ -42,7 +42,7 @@ import { log } from "console";
 // ======================================================
 
 const API_URL =
-  "http://test4180.atwebpages.com/getTasks.php";
+  "https://test4180.atwebpages.com/getTasks.php";
 
 // ======================================================
 // DEFAULT PAGINATION
@@ -544,7 +544,7 @@ const DashboardContent = () => {
         try {
           const response =
             await fetch(
-              "http://test4180.atwebpages.com/teamMembers.php"
+              "https://test4180.atwebpages.com/teamMembers.php"
             );
 
           if (!response.ok) {
